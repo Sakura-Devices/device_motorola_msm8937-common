@@ -3,22 +3,7 @@
 # 2021-06-22 @ 23:30 (UTC)
 # ID: 2wnukx
 # Written by jpzex@XDA
-# Use at your own risk, Busybox is required.
-
-which busybox > /dev/null || $(echo "No busybox found." && exit 0)
-
-alias_list="
-mountpoint
-awk
-echo
-grep
-chmod
-fstrim
-cat
-mount"
-
-for x in $alias_list; do
-alias $x="busybox $x"; done
+# Use at your own risk.
 
 scriptname=base_opt
 dumpE=0
