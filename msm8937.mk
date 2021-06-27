@@ -315,7 +315,9 @@ PRODUCT_PACKAGES += \
     init.qcom.syspart_fixup.sh
 
 PRODUCT_PACKAGES += \
-    init.extra.sh
+    init.extra.sh \
+    init.extra.base_opt.sh \
+    init.extra.batt_opt.sh
 
 # Recovery
 TARGET_RECOVERY_DENSITY := xhdpi

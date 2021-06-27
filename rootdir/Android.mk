@@ -137,3 +137,19 @@ LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SRC_FILES := bin/init.extra.sh
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := init.extra.base_opt.sh
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_SRC_FILES := bin/init.extra.base_opt.sh
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := init.extra.batt_opt.sh
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_SRC_FILES := bin/init.extra.batt_opt.sh
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
